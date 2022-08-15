@@ -19,6 +19,7 @@ body{
     width: 100%;
     border: 1px solid black;
     max-width: 1440px;
+    min-width: 1440px;
     overflow: hidden;
     margin: auto;    
     background: url("images/bg-header-desktop.png");
@@ -76,6 +77,14 @@ header img{
 
 #green-button:hover, #blue-button:hover{
     cursor: pointer;
+}
+
+#green-button:hover{
+    background-color: hsl(171, 66%, 54%);
+}
+
+#blue-button:hover{
+    background-color: hsl(233, 100%, 79%)
 }
 
 h2{
@@ -151,4 +160,8 @@ ul{
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+li:hover, footer img:hover{
+    color: cyan;
 }
