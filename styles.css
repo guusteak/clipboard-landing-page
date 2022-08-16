@@ -41,6 +41,7 @@ p{
 
 .container{
     position: relative;
+    width: 100vw;
 }
 
 
@@ -133,9 +134,9 @@ h3{
 }
 
 .companies{
-    gap: 20px;
+    gap: 100px;
     padding: 20px 100px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #Clipboard{
@@ -143,8 +144,9 @@ h3{
 }
 
 footer{
+    margin: auto;
     background-color: hsl(201, 11%, 66%);
-    width: 100%;
+    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,4 +166,115 @@ ul{
 
 li:hover, footer img:hover{
     color: cyan;
+}
+
+@media (max-width:375px){
+    body{
+        min-width: 375px;
+        width: 375px;
+        max-width: 375px;
+        height: fit-content;
+    }
+    *{
+        margin: 0;
+        max-width: 375px;
+        box-sizing: border-box;
+    }
+    .container{
+        background: url('images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        max-width: 375px;
+        min-width: 300px;
+        width: 100%;
+        overflow: hidden;
+        border: none;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    header{
+        margin: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+    #desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #desktop img{
+        left: 10px;
+        width: 80%;
+    }
+    .list{
+        padding: 10px 20px;
+        margin: auto;
+    }
+    .list-element{
+        text-align: center;
+    }
+
+    .companies{
+        position: relative;
+        left: -70px;
+        margin: auto;
+        margin-top: 60px;
+        gap: 0;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    footer{
+        width: 100vw;
+        max-width: 375px;
+        margin-top: 20px;
+        height: fit-content;
+        flex-direction: column;
+        
+    }
+    .company{
+        width: 250px;
+        margin: auto;
+        
+
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 0;
+    }
+    li{
+        
+        align-items: center;
+        text-align: center;
+    }
+    .advantages{
+        flex-direction: column;
+    }
+    .advantage{
+        width: 100%;
+        padding: 10px 40px;
+    }
+    .buttons{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    main{
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+    p:not(#green-button, #blue-button, .pap, .adv){
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+
+}
+    #AccessClipboard img{
+        width: 100%;
+    }
 }
