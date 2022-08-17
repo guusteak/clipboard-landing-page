@@ -27,7 +27,7 @@ body{
     
 }
 
-p:not(#green-button, #blue-button, .pap, .adv){
+p:not(.green-button, .blue-button, .pap, .adv){
     width: 550px;
     word-wrap: break-word;
     text-align: center;
@@ -62,29 +62,29 @@ header img{
     gap: 15px;
 }
 
-#green-button{
+.green-button{
     background-color: hsl(171, 66%, 44%);
     color: white;
     padding: 10px;
     border-radius: 25px;
 }
 
-#blue-button{
+.blue-button{
     background-color: hsl(233, 100%, 69%);
     color: white;
     padding: 10px;
     border-radius: 25px;
 }
 
-#green-button:hover, #blue-button:hover{
+.green-button:hover, .blue-button:hover{
     cursor: pointer;
 }
 
-#green-button:hover{
+.green-button:hover{
     background-color: hsl(171, 66%, 54%);
 }
 
-#blue-button:hover{
+.blue-button:hover{
     background-color: hsl(233, 100%, 79%)
 }
 
@@ -267,7 +267,7 @@ li:hover, footer img:hover{
         margin: auto;
         align-items: center;
     }
-    p:not(#green-button, #blue-button, .pap, .adv){
+    p:not(.green-button, .blue-button, .pap, .adv){
     width: 100%;
     word-wrap: break-word;
     text-align: center;
